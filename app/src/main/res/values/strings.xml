@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">stYle</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main_flow">Style Shopping</string>
+
+    <string name="phone">Put your phone number</string>
+    <string name="password">Put your password</string>
+    <string name="repassword">Confirm your password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="prLogin">Click here to Login</string>
+    <string name="prRegister">Click here to Register</string>
+
+</resources>
