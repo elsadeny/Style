@@ -2,9 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sadeny.style">
 
-    <!--permission required by the application -->
-<uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- permission required by the application -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <!-- Application instance -->
     <application
         android:allowBackup="true"
@@ -17,16 +18,18 @@
             android:name=".MainFlow"
             android:label="@string/title_activity_main_flow"
             android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login_Activity">
-
-        </activity>
-        <activity android:name=".Register_Activity"> </activity>
+        <activity android:name=".Login_Activity"></activity>
+        <activity android:name=".Register_Activity"></activity>
+        <activity android:name=".Setting"></activity>
     </application>
 
 </manifest>

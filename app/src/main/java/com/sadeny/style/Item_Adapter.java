@@ -60,7 +60,7 @@ public class Item_Adapter extends  Adapter<Item_Adapter.MyViewHolder>{
     {
         ItemDesc itemDesc = itemList.get(position);
         holder.it_desc.setText(itemDesc.getItemName());
-        holder.it_price.setText(Float.toString(itemDesc.getItem_price()));
+        holder.it_price.setText(itemDesc.getItem_price());
         //adding image to the holder
         holder.it_image.setImageBitmap(itemDesc.getItem_pic());
         //set the event

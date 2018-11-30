@@ -7,4 +7,6 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="ma_back">#ffcccc</color>
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
 </resources>

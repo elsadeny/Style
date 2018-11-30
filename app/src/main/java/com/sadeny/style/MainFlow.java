@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -66,7 +67,7 @@ public class MainFlow extends AppCompatActivity {
         Bitmap bitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(),R.drawable.ico);
         for(int i=1;i<31;i++)
         {
-            itemDesc = new ItemDesc("item "+i,2000,bitmap);
+            itemDesc = new ItemDesc("item "+i,Integer.toString(2000),bitmap);
             itemList.add(itemDesc);
         }
 
@@ -80,6 +81,13 @@ public class MainFlow extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main,menu);
         return super.onCreateOptionsMenu(menu);
+    }
+    //function to respond the input event of the menu item
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        int id = item.getItemId();
+      return super.onOptionsItemSelected(item);
     }
 
     //class to implement itemdecoration
